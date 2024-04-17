@@ -50,7 +50,7 @@ I'm at a very productive moment in my life, where I decided to create an app tha
 
 <div align="center">
 
-<h3> Dúvidas? Entre em contato comigo! 🩵✌️</h3>
+<h3> Any questions? Contact me! 🩵✌️</h3>
 
 [![Linkedin](https://img.shields.io/badge/Linkedin-1d1e25?style=for-the-badge&logo=linkedin&logoColor=0967c5)](https://www.linkedin.com/in/dan-ia/)
 [![Gmail](https://img.shields.io/badge/Gmail-1d1e25?style=for-the-badge&logo=gmail&logoColor=white)](mailto:danieillsilvarv411@gmail.com)
