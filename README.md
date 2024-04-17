@@ -3,10 +3,6 @@
 </h1>
 
 
-<img width="260" src="./src/assets/Readme/1.jpg">
-<img width="260" src="./src/assets/Readme/2.jpg">
-<img width="260" src="./src/assets/Readme/3.jpg">
-<img width="260" src="./src/assets/Readme/4.jpg">
 
 ### 📕 About
 
@@ -20,6 +16,16 @@ the application is available as APK for
 Android devices (distributed to
 friends).
 
+##
+
+<div align="center">
+<img width="240" src="./src/assets/Readme/1.jpg">
+<img width="240" src="./src/assets/Readme/2.jpg">
+<img width="240" src="./src/assets/Readme/3.jpg">
+<img width="240" src="./src/assets/Readme/4.jpg">
+</div>
+
+##
 ### ❓ Why the app
 
 I'm at a very productive moment in my life, where I decided to create an app that would help me keep my day organized and avoid procrastination. Thus becoming an essential part of my day, simplifying the organization and monitoring of my daily activities.
