@@ -19,10 +19,10 @@ friends).
 ##
 
 <div align="center">
-<img width="240" src="./src/assets/Readme/1.jpg">
-<img width="240" src="./src/assets/Readme/2.jpg">
-<img width="240" src="./src/assets/Readme/3.jpg">
-<img width="240" src="./src/assets/Readme/4.jpg">
+<img width="200" src="./src/assets/Readme/1.jpg">
+<img width="200" src="./src/assets/Readme/2.jpg">
+<img width="200" src="./src/assets/Readme/3.jpg">
+<img width="200" src="./src/assets/Readme/4.jpg">
 </div>
 
 ##
