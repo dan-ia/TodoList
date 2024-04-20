@@ -41,13 +41,20 @@ I'm at a very productive moment in my life, where I decided to create an app tha
 
 ### 🤝🏽 How to contribute
 
+You need to have [Node](https://nodejs.org/en/download), [Git](https://git-scm.com/download/win) and [VsCode](https://code.visualstudio.com/download) installed on your computer.
+
+And to run the application, simply download [Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US) on your smartphone.
+
+Or install the [Android emulator](https://developer.android.com/studio?hl=pt-br) on your computer and download Expo Go from the Play Store using the emulator.
+
+#### Siga o passo a passo:
 
 ````bash
-    #Clone the project
-    $ git clone https://github.com/dan-ia/TodoList
+    # Clone the project
+    $ git clone git@github.com:dan-ia/TodoList.git
 
-    #Enter directory
-    $ cd TodoList-main
+    # Enter directory
+    $ cd TodoList
 ````
 ````bash
     # Install the dependencies, if use npm
@@ -60,7 +67,13 @@ I'm at a very productive moment in my life, where I decided to create an app tha
     $ yarn
 ````
 
+```` bash
+     # Open project in VsCode
+     code .
 
+     # Start server
+     npx expo start
+````
 <div align="center">
 
 <h3> Any questions? Contact me! 🩵✌️</h3>
