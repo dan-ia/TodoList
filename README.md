@@ -30,8 +30,7 @@ friends).
 
 I'm at a very productive moment in my life, where I decided to create an app that would help me keep my day organized and avoid procrastination. Thus becoming an essential part of my day, simplifying the organization and monitoring of my daily activities.
 
-
-
+&nbsp;
 ### ⛏️ Tools used
 
 - [Npm](https://docs.npmjs.com/)
@@ -39,6 +38,7 @@ I'm at a very productive moment in my life, where I decided to create an app tha
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [React Native](https://reactnative.dev/docs/getting-started)
 
+&nbsp;
 ### 🤝🏽 How to contribute
 
 You need to have [Node](https://nodejs.org/en/download), [Git](https://git-scm.com/download/win) and [VsCode](https://code.visualstudio.com/download) installed on your computer.
