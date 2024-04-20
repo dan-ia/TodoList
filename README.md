@@ -1,5 +1,11 @@
+
+
+<div align="center">
+  <img src="./src/assets//Readme/icon.jpg" widht="100px" height="100px">
+</div>
+
 <h1 align='center'>
- <p>Todo List 📝</p>
+ <p>Todo List </p>
 </h1>
 
 
