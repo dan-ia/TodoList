@@ -40,7 +40,7 @@ I'm at a very productive moment in my life, where I decided to create an app tha
 
 ### ⛏️ Tools used
 
-- [Npm](https://docs.npmjs.com/)
+
 - [Expo](https://docs.expo.dev/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [React Native](https://reactnative.dev/docs/getting-started)
