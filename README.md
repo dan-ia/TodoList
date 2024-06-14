@@ -9,7 +9,6 @@
 </h1>
 
 
-
 ### 📕 About
 
 Daily task management app offers
@@ -22,7 +21,7 @@ the application is available as APK for
 Android devices (distributed to
 friends).
 
-##
+#
 
 <div align="center">
 <img width="200" src="./src/assets/Readme/1.jpg">
@@ -31,20 +30,24 @@ friends).
 <img width="200" src="./src/assets/Readme/4.jpg">
 </div>
 
-##
+#
+
 ### ❓ Why the app
 
 I'm at a very productive moment in my life, where I decided to create an app that would help me keep my day organized and avoid procrastination. Thus becoming an essential part of my day, simplifying the organization and monitoring of my daily activities.
 
-&nbsp;
+#
+
 ### ⛏️ Tools used
 
-- [Npm](https://docs.npmjs.com/)
+
 - [Expo](https://docs.expo.dev/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [React Native](https://reactnative.dev/docs/getting-started)
+- [Async Storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
 
-&nbsp;
+#
+
 ### 🤝🏽 How to contribute
 
 You need to have [Node](https://nodejs.org/en/download), [Git](https://git-scm.com/download/win) and [VsCode](https://code.visualstudio.com/download) installed on your computer.
@@ -53,7 +56,7 @@ And to run the application, simply download [Expo Go](https://play.google.com/st
 
 Or install the [Android emulator](https://developer.android.com/studio?hl=pt-br) on your computer and download Expo Go from the Play Store using the emulator.
 
-#### Siga o passo a passo:
+#### Follow the step by step:
 
 ````bash
     # Clone the project
