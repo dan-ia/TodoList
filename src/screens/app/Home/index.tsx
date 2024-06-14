@@ -2,12 +2,18 @@ import { View, Text } from "react-native";
 
 import { styles } from "./styles";
 
-import Flat from "../../components/FlatList";
-import Header from "../../components/Header";
+import Flat from "../../../components/FlatList";
+import Header from "../../../components/Header";
+import { StatusBar } from "expo-status-bar";
 
 export default function Home() {
+
+
+
     return (
         <View style={styles.container}>
+            <StatusBar translucent={true} style="light" />
+
             <Header />
             <View style={styles.header}>
                 <Text style={styles.subtitle}>Comprometa-se diariamente com suas metas.</Text>
