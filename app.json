@@ -4,7 +4,7 @@
     "slug": "Todo",
     "version": "3.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/icon.jpg",
+    "icon": "./src/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./src/assets/splash141414.png",
@@ -19,12 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/icon.jpg"
+        "foregroundImage": "./src/assets/icon.png"
       },
       "package": "com.d44ns.Todo"
     },
     "web": {
-      "favicon": "./src/assets/icon.jpg"
+      "favicon": "./src/assets/icon.png"
     },
     "extra": {
       "eas": {

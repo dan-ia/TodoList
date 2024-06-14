@@ -14,12 +14,12 @@ export default function Header() {
 
                 <Text style={styles.title}>Tarefas</Text>
 
-                <TouchableOpacity >
+                {/* <TouchableOpacity >
                     <Image style={styles.avatar} source={require('../../assets/perfil.jpg')}></Image>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
-            
-            <Line/>
+
+            <Line />
         </View>
     )
 }
