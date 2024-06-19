@@ -15,7 +15,6 @@ export default function Home() {
             <StatusBar translucent={true} style="light" />
 
             <Header />
-
             <View style={styles.header}>
                 <Text style={styles.subtitle}>Comprometa-se diariamente com suas metas.</Text>
                 <Text style={styles.subtitle}>Cada tarefa cumprida é um passo em direção ao seu sucesso.</Text>

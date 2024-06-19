@@ -18,8 +18,8 @@ export default function Header() {
                     <Image style={styles.avatar} source={require('../../assets/perfil.jpg')}></Image>
                 </TouchableOpacity>
             </View>
-
-            <Line />
+            
+            <Line/>
         </View>
     )
 }
