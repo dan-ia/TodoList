@@ -1,12 +1,13 @@
 
 
 <div align="center">
-  <img src="./src/assets/Readme/icon.png" width="100px" height="100px">
+  <img src="./src/assets/Read/icon.png" width="100px" height="100px">
 </div>
 
 <h1 align='center'>
  <p>Todo List </p>
 </h1>
+
 
 
 ### 📕 About
@@ -24,10 +25,10 @@ friends).
 ##
 
 <div align="center">
-<img width="200" src="./src/assets/Readme/1.jpg">
-<img width="200" src="./src/assets/Readme/2.jpg">
-<img width="200" src="./src/assets/Readme/3.jpg">
-<img width="200" src="./src/assets/Readme/4.jpg">
+<img width="200" src="./src/assets/Read/1.jpg">
+<img width="200" src="./src/assets/Read/2.jpg">
+<img width="200" src="./src/assets/Read/3.jpg">
+<img width="200" src="./src/assets/Read/4.jpg">
 </div>
 
 ##
