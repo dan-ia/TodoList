@@ -9,7 +9,6 @@
 </h1>
 
 
-
 ### 📕 About
 
 Daily task management app offers
