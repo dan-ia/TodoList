@@ -1,4 +1,5 @@
 import { StyleSheet, Platform, StatusBar } from 'react-native';
+
 import { theme } from '../../theme';
 
 export const styles = StyleSheet.create({
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
     },
     logo: {
         width: 40,
-        height: 40, 
+        height: 40,
     },
     title: {
         color: theme.colors.white,
@@ -26,7 +27,7 @@ export const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 50,
-        
+
     },
 
 

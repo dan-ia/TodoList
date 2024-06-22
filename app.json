@@ -11,15 +11,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#141414"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/icon.png"
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#222222"
       },
       "package": "com.d44ns.Todo"
     },
@@ -30,9 +28,6 @@
       "eas": {
         "projectId": "a1b8a23f-ca8f-4963-966e-f7846f637c93"
       }
-    },
-    "plugins": [
-      "expo-video"
-    ]
+    }
   }
 }

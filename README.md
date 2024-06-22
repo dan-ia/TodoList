@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <img src="./src/assets/Readme/icon.png" width="100px" height="100px">
+  <img src="./src/assets/README/icon.png" width="100px" height="100px">
 </div>
 
 <h1 align='center'>
@@ -25,10 +25,10 @@ friends).
 ##
 
 <div align="center">
-<img width="200" src="./src/assets/Readme/1.jpg">
-<img width="200" src="./src/assets/Readme/2.jpg">
-<img width="200" src="./src/assets/Readme/3.jpg">
-<img width="200" src="./src/assets/Readme/4.jpg">
+<img width="200" src="./src/assets/README/1.jpg">
+<img width="200" src="./src/assets/README/2.jpg">
+<img width="200" src="./src/assets/README/3.jpg">
+<img width="200" src="./src/assets/README/4.jpg">
 </div>
 
 ##

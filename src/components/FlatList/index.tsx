@@ -53,12 +53,13 @@ export default function Flat() {
         } else {
             Alert.alert('Confirma', 'Deseja apagar tudo da lista?', [
                 {
-                    text: 'Sim',
-                    onPress: () => setTodos([]),
+                    text: 'Não',
                 },
                 {
-                    text: 'Não',
+                    text: 'Sim',
+                    onPress: () => setTodos([]),
                 }
+
             ]);
         }
     };
@@ -84,24 +85,39 @@ export default function Flat() {
     };
 
     const ListItem = ({ todo }) => {
-        if (!todo) return null;
+
+
+        if (!todo) return null
+
         return (
+
             <View style={styles.containerList}>
+
+
+                {todo.completed && (
+                    <TouchableOpacity style={styles.btnDoneComplete} onPress={() => markTodoComplete(todo.id)}>
+                        <FontAwesome5 name="check" size={10} color={theme.colors.gray[700]} />
+                    </TouchableOpacity>
+                )}
+                {!todo.completed && (
+                    <TouchableOpacity style={styles.btnDone} onPress={() => markTodoComplete(todo.id)}>
+
+                    </TouchableOpacity>
+                )}
+
                 <Text style={{
                     maxWidth: 270,
                     fontSize: 16,
-                    color: todo.completed ? "#37cd86" : "#fff",
+                    color: todo.completed ? "#505050" : "#fff",
                     textDecorationLine: todo.completed ? "line-through" : "none",
                 }}>{todo.task}</Text>
+
                 <View style={styles.btns}>
-                    {!todo.completed && (
-                        <TouchableOpacity style={styles.btnDone} onPress={() => markTodoComplete(todo.id)}>
-                            <FontAwesome5 name="check" size={15} color={theme.colors.white} />
-                        </TouchableOpacity>
-                    )}
+
                     <TouchableOpacity style={styles.btnTrash} onPress={() => deleteTodo(todo.id)}>
-                        <Entypo name="cross" size={24} color={theme.colors.white} />
+                        <Entypo name="cross" size={24} color={theme.colors.gray[600]} />
                     </TouchableOpacity>
+
                 </View>
             </View>
         );
@@ -126,7 +142,7 @@ export default function Flat() {
                         style={styles.input}
                         value={textInput}
                         onChangeText={(text) => setTextInput(text)}
-                        placeholder="Adicionar Tarefa"
+                        placeholder="Create your task..."
                         placeholderTextColor={theme.colors.gray[600]}
                         selectionColor={theme.colors.white}
                     />
@@ -135,7 +151,7 @@ export default function Flat() {
                 <TouchableOpacity onPress={addTodo} style={styles.btnAdd}>
                     <Entypo name="plus" size={35} color={theme.colors.green} />
                 </TouchableOpacity>
-                
+
             </View>
         </View>
     );

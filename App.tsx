@@ -1,10 +1,12 @@
 import * as React from 'react';
+import 'react-native-gesture-handler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import Home from './src/screens/app/Home/index';
-import { Splash } from "./src/screens/splash/splash";
+import { Splash } from "./src/app/pages/Splash/splash";
 import { useState } from "react";
-import { preventAutoHideAsync } from 'expo-splash-screen';
 
+import { preventAutoHideAsync } from 'expo-splash-screen';
+import Routes from './src/app/routes';
 
 preventAutoHideAsync()
 
@@ -13,9 +15,10 @@ export default function App() {
   const [splashComplete, setSplashComplete] = useState(false);
 
   return (
-
-    splashComplete ? <Home /> : <Splash onComplete={setSplashComplete} />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      {
+        splashComplete ? <Routes /> : <Splash onComplete={setSplashComplete} />
+      }
+    </GestureHandlerRootView>
   );
 }
-
-
