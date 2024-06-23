@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        backgroundColor: theme.colors.gray[700],
+        backgroundColor: theme.colors.white,
         alignItems: "center",
     },
     header: {
@@ -31,13 +31,15 @@ export const styles = StyleSheet.create({
     },
 
     construction: {
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        paddingTop: 200,
+        width: '100%',
     },
     number: {
-        color: theme.colors.gray[500],
+        color: theme.colors.gray[800],
         fontSize: 20,
+        fontWeight: 'bold',
     },
     percentage: {
         width: 200,
@@ -58,13 +60,13 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         width: 20,
         height: 6,
-        backgroundColor: theme.colors.green,
+        backgroundColor: theme.colors.red2,
         marginLeft: 12,
         borderRadius: 10,
     },
 
     frase: {
-        color: theme.colors.gray[500],
+        color: theme.colors.gray[600],
         fontSize: 16,
     },
 

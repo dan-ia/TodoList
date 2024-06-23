@@ -4,7 +4,8 @@ export const colors = {
     black: '#000000',
 
     red: '#b90101',
-    green:'#37cd86',
+    red2: '#dc1c1c',
+    green: '#37cd86',
 
     gray: {
         800: '#141414',
@@ -13,5 +14,5 @@ export const colors = {
         500: '#909090'
     },
 
-    
+
 }

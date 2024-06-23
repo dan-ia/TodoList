@@ -17,12 +17,15 @@ declare global {
 }
 
 export function StackRoutes() {
+
+
     return (
 
         <Navigator
             screenOptions={{
                 title: '',
                 headerTintColor: '#fff',
+                headerShadowVisible: true,
             }}
         >
             <Screen
@@ -36,7 +39,9 @@ export function StackRoutes() {
                 name='Profile'
                 component={Profile}
                 options={{
+                    animation: 'slide_from_right',
                     headerStyle: {
+
                         backgroundColor: '#141414'
                     }
 
