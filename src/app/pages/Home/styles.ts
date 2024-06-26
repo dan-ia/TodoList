@@ -25,14 +25,15 @@ export const styles = StyleSheet.create({
 
     },
 
-    // logo: {
-    //     width: 40,
-    //     height: 40,
-    // },
+    logo: {
+        width: 40,
+        height: 40,
+    },
 
     title: {
         color: theme.colors.white,
         fontSize: 28,
+        paddingRight: 15,
     },
     subtitle: {
         color: theme.colors.gray[500],
