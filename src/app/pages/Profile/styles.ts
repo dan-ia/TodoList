@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 20,
         fontSize: 25,
         // fontWeight: 'bold',
-        fontFamily: 'DidactGothic_400Regular',
+        fontFamily: theme.fonts.DidactGothic,
     },
     subtitle: {
         color: theme.colors.gray[500],
@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingRight: 20,
         fontSize: 18,
-        fontFamily: 'DidactGothic_400Regular',
+        fontFamily: theme.fonts.DidactGothic,
     },
 
     construction: {
@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
     frase: {
         color: theme.colors.gray[600],
         fontSize: 16,
-        fontFamily: 'DidactGothic_400Regular',
+        fontFamily: theme.fonts.DidactGothic,
     },
 
 });

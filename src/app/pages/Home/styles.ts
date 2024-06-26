@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
         paddingRight: 15,
         fontSize: 28,
         // fontWeight: 'bold',
-        fontFamily: 'DidactGothic_400Regular'
+        fontFamily: theme.fonts.DidactGothic,
     },
     subtitle: {
         color: theme.colors.gray[500],
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingRight: 20,
         fontSize: 16,
-        fontFamily: 'DidactGothic_400Regular'
+        fontFamily: theme.fonts.DidactGothic,
     },
 
 

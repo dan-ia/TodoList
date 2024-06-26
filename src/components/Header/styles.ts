@@ -22,6 +22,7 @@ export const styles = StyleSheet.create({
     title: {
         color: theme.colors.white,
         fontSize: 30,
+        fontFamily: theme.fonts.DidactGothic,
     },
     avatar: {
         width: 40,

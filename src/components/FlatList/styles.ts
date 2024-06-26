@@ -75,6 +75,7 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
         fontSize: 18,
         paddingLeft: 20,
+        fontFamily: theme.fonts.DidactGothic,
     },
     btnClearAll: {
         width: 60,
