@@ -107,7 +107,8 @@ export default function Flat() {
 
                 <Text style={{
                     maxWidth: 270,
-                    fontSize: 16,
+                    fontSize: 18,
+                    fontFamily: 'DidactGothic_400Regular',
                     color: todo.completed ? "#505050" : "#fff",
                     textDecorationLine: todo.completed ? "line-through" : "none",
                 }}>{todo.task}</Text>

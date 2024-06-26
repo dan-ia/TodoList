@@ -19,15 +19,18 @@ export const styles = StyleSheet.create({
 
     title: {
         color: theme.colors.white,
-        fontSize: 25,
         paddingLeft: 20,
+        fontSize: 25,
+        // fontWeight: 'bold',
+        fontFamily: 'DidactGothic_400Regular',
     },
     subtitle: {
         color: theme.colors.gray[500],
-        fontSize: 16,
         paddingTop: 20,
         paddingLeft: 20,
         paddingRight: 20,
+        fontSize: 18,
+        fontFamily: 'DidactGothic_400Regular',
     },
 
     construction: {
@@ -68,6 +71,7 @@ export const styles = StyleSheet.create({
     frase: {
         color: theme.colors.gray[600],
         fontSize: 16,
+        fontFamily: 'DidactGothic_400Regular',
     },
 
 });

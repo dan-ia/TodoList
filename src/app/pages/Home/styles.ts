@@ -16,13 +16,11 @@ export const styles = StyleSheet.create({
     },
 
     containerHeader: {
-
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingBottom: 10,
         alignItems: 'center',
         paddingHorizontal: 15,
-
     },
 
     logo: {
@@ -32,15 +30,18 @@ export const styles = StyleSheet.create({
 
     title: {
         color: theme.colors.white,
-        fontSize: 28,
         paddingRight: 15,
+        fontSize: 28,
+        // fontWeight: 'bold',
+        fontFamily: 'DidactGothic_400Regular'
     },
     subtitle: {
         color: theme.colors.gray[500],
-        fontSize: 16,
         paddingTop: 20,
         paddingLeft: 20,
         paddingRight: 20,
+        fontSize: 16,
+        fontFamily: 'DidactGothic_400Regular'
     },
 
 
