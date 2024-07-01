@@ -4,6 +4,7 @@ import { FontAwesome5, Entypo } from '@expo/vector-icons';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { styles } from "./styles";
 import { theme } from "../../theme";
+import Line from "../Line";
 
 export default function Flat() {
     const [todos, setTodos] = useState([]);
@@ -152,8 +153,9 @@ export default function Flat() {
                 <TouchableOpacity onPress={addTodo} style={styles.btnAdd}>
                     <Entypo name="plus" size={35} color={theme.colors.green} />
                 </TouchableOpacity>
-
             </View>
+
+            <Line />
         </View>
     );
 }
