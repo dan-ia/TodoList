@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../pages/Home';
-import Profile from '../pages/Profile'
+import Settings from '../pages/Settings'
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -11,7 +11,7 @@ declare global {
 
         interface RootParamList {
             Home: undefined
-            Profile: undefined
+            Settings: undefined
         }
     }
 }
@@ -36,8 +36,8 @@ export function StackRoutes() {
                 }}
             />
             <Screen
-                name='Profile'
-                component={Profile}
+                name='Settings'
+                component={Settings}
                 options={{
                     animation: 'slide_from_right',
                     headerStyle: {

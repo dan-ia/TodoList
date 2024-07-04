@@ -1,25 +1,35 @@
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-const { Navigator, Screen } = createMaterialBottomTabNavigator();
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+const { Navigator, Screen } = createBottomTabNavigator();
 
 import { FontAwesome5 } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import { theme } from '@/theme';
 
 import { StackRoutes } from "./stack.Routes"
-import { Notes } from '../pages/Notes';
-import { theme } from '@/theme';
-import { Text } from 'react-native';
-import { white } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
+
+import Notes from '../pages/Notes';
 
 
 export function TabRoutes() {
   return (
     <Navigator
       initialRouteName="Home"
-      barStyle={{
-        backgroundColor: theme.colors.gray[800],
-        height: 70,
+
+      screenOptions={{
+        headerShown: false,
+        // tabBarShowLabel: false,
+        tabBarHideOnKeyboard: true,
+        tabBarActiveTintColor: theme.colors.white,
+        tabBarInactiveTintColor: theme.colors.gray[500],
+
+        tabBarStyle: {
+          backgroundColor: theme.colors.gray[800],
+          borderTopColor: theme.colors.gray[700],
+          paddingBottom: 5,
+          height: 55,
+
+        }
       }}
-    // shifting={true}
     >
       <Screen
         name="Tasks"
@@ -27,13 +37,13 @@ export function TabRoutes() {
 
         options={{
           tabBarLabel: 'Tasks',
-          tabBarColor: theme.colors.green,
           tabBarIcon: ({ focused, color }) => {
 
             if (focused) {
-              return <FontAwesome5 name="tasks" size={24} color={color} />
+              return <FontAwesome5 name="tasks" size={23} color={color} />
+
             }
-            return <FontAwesome5 name="tasks" size={24} color={color} />
+            return <FontAwesome5 name="tasks" size={19} color={color} />
 
           }
         }}
@@ -45,13 +55,12 @@ export function TabRoutes() {
 
         options={{
           tabBarLabel: 'Notes',
-          tabBarColor: 'blue',
           tabBarIcon: ({ focused, color }) => {
 
             if (focused) {
-              return <MaterialIcons name="grid-view" size={24} color={color} />
+              return <MaterialIcons name="grid-view" size={28} color={color} />
             }
-            return <MaterialIcons name="grid-view" size={30} color={color} />
+            return <MaterialIcons name="grid-view" size={23} color={color} />
 
 
           }
