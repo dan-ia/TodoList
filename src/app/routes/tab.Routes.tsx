@@ -1,8 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const { Navigator, Screen } = createBottomTabNavigator();
 
-import { FontAwesome5 } from '@expo/vector-icons';
-import { MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome5, FontAwesome6, Octicons, MaterialIcons } from '@expo/vector-icons';
 import { theme } from '@/theme';
 
 import { StackRoutes } from "./stack.Routes"
@@ -40,10 +39,10 @@ export function TabRoutes() {
           tabBarIcon: ({ focused, color }) => {
 
             if (focused) {
-              return <FontAwesome5 name="tasks" size={23} color={color} />
+              return <FontAwesome6 name="check-square" size={28} color={color} />
 
             }
-            return <FontAwesome5 name="tasks" size={19} color={color} />
+            return <FontAwesome6 name="check-square" size={23} color={color} />
 
           }
         }}
@@ -58,9 +57,9 @@ export function TabRoutes() {
           tabBarIcon: ({ focused, color }) => {
 
             if (focused) {
-              return <MaterialIcons name="grid-view" size={28} color={color} />
+              return <Octicons name="note" size={28} color={color} />
             }
-            return <MaterialIcons name="grid-view" size={23} color={color} />
+            return <Octicons name="note" size={23} color={color} />
 
 
           }
