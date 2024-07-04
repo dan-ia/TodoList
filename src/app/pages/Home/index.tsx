@@ -10,6 +10,8 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 
 import { Ionicons } from '@expo/vector-icons';
+import Header from "@/components/Header";
+import { Title } from "@/components/Title";
 
 export default function Home() {
 
@@ -20,19 +22,11 @@ export default function Home() {
             <StatusBar translucent={true} style="light" />
 
 
-            <View style={styles.header}>
+            <View style={styles.containerHeader}>
 
-                <View style={styles.containerHeader}>
-                    {/* <TouchableOpacity onPress={() => { Linking.openURL('https://www.instagram.com/d44ns/') }}>
-                        <Image style={styles.logo} source={require('../../../assets/D.png')}></Image>
-                    </TouchableOpacity> */}
+                <Header />
 
-                    <Text style={styles.title}>Tasks</Text>
-
-                    <TouchableOpacity onPress={() => navigate('Profile')}>
-                        <Ionicons name="settings-sharp" size={26} color="white" />
-                    </TouchableOpacity>
-                </View>
+                <Title title="Tasks" />
 
             </View>
 

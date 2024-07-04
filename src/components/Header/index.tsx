@@ -1,31 +1,31 @@
-// import { View, Image, TouchableOpacity, Text, Linking } from "react-native";
+import { View, Image, TouchableOpacity, Text, Linking } from "react-native"
 
-// import { styles } from "./styles";
+import { Ionicons } from '@expo/vector-icons';
 
-// import Line from "../Line";
-
-// export default function Header() {
-
-//     return (
-//         <View style={styles.container}>
-//             <View style={styles.containerHeader}>
-//                 <TouchableOpacity onPress={() => { Linking.openURL('https://www.instagram.com/d44ns/') }}>
-//                     <Image style={styles.logo} source={require('../../assets/D.png')}></Image>
-//                 </TouchableOpacity>
-
-//                 <Text style={styles.title}>Tarefas</Text>
+import { styles } from "./styles";
+import { useNavigation } from "@react-navigation/native";
+import { Title } from "../Title";
 
 
-//                 <TouchableOpacity onPress={() => navigate('Profile')}>
-//                     <Image style={styles.avatar} source={require('../../../assets/perfil.jpg')}></Image>
-//                 </TouchableOpacity>
+export default function Header() {
 
-//             </View>
+    const { navigate } = useNavigation()
 
-//             <Line />
-//         </View>
-//     )
-// }
+    return (
+
+        <View style={styles.header}>
+            {/* <TouchableOpacity onPress={() => { Linking.openURL('https://www.instagram.com/d44ns/') }}>
+                            <Image style={styles.logo} source={require('../../../assets/D.png')}></Image>
+                        </TouchableOpacity> */}
+
+            <Title title="" />
+
+            <TouchableOpacity onPress={() => navigate('Settings')}>
+                <Ionicons name="settings-sharp" size={26} color="white" />
+            </TouchableOpacity>
+        </View>
+    )
+}
 
 
 
