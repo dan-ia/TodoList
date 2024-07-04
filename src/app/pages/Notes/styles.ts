@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
         width: '100%',
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 15 : 55,
         paddingHorizontal: 10,
+        paddingBottom: 5,
     },
     containerGrids: {
         paddingTop: 10,
