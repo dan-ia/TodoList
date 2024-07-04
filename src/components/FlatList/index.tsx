@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, TextInput, FlatList, Text, TouchableOpacity, SafeAreaView, Alert } from "react-native";
+import { View, TextInput, FlatList, Text, TouchableOpacity, SafeAreaView, Alert, Keyboard, Pressable } from "react-native";
 import { FontAwesome5, Entypo } from '@expo/vector-icons';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { styles } from "./styles";
@@ -17,11 +17,30 @@ export default function Flat() {
         saveTodoToUserDevice(todos);
     }, [todos]);
 
+
+    const [visibleInput, setVisibleInput] = useState("none")
+
+
+    function enabledInput() {
+        if (visibleInput === "none") {
+            setVisibleInput("undefined")
+        } else {
+            return setVisibleInput("none")
+        }
+    }
+
+    function disableInput() {
+        setVisibleInput("none")
+        Keyboard.dismiss()
+    }
+
     const [textInput, setTextInput] = useState('');
 
     const addTodo = () => {
         if (textInput.trim() === "") {
-            Alert.alert("Erro", "A tarefa não pode ser vazia");
+            setVisibleInput("none")
+            // Keyboard.dismiss()
+            Alert.alert('A Tarefa não pode ser vazia!')
         } else {
             const newTodo = {
                 id: Math.random(),
@@ -85,6 +104,8 @@ export default function Flat() {
         }
     };
 
+
+
     const ListItem = ({ todo }) => {
 
 
@@ -126,7 +147,9 @@ export default function Flat() {
     };
 
     return (
-        <View style={styles.container}>
+
+        <Pressable style={styles.container} onPress={disableInput}>
+
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={todos}
@@ -134,15 +157,22 @@ export default function Flat() {
                 inverted={false}
                 renderItem={({ item }) => <ListItem todo={item} />}
             />
-            <View style={styles.containerInput}>
-                <TouchableOpacity style={styles.btnClearAll} onPress={() => clearTodos()}>
-                    <FontAwesome5 name="trash-alt" size={24} color={theme.colors.red} />
-                </TouchableOpacity>
+
+            <TouchableOpacity style={styles.btnClearAll} onPress={() => clearTodos()}>
+                <FontAwesome5 name="trash-alt" size={24} color={theme.colors.red} />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={enabledInput} style={styles.btnAdd}>
+                <Entypo name="plus" size={35} color={theme.colors.gray[700]} />
+            </TouchableOpacity>
+
+            <View style={[styles.containerInput, { display: visibleInput }]}>
 
                 <SafeAreaView>
                     <TextInput
                         style={styles.input}
                         value={textInput}
+                        focusable
                         onChangeText={(text) => setTextInput(text)}
                         placeholder="Create your task..."
                         placeholderTextColor={theme.colors.gray[600]}
@@ -150,12 +180,13 @@ export default function Flat() {
                     />
                 </SafeAreaView>
 
-                <TouchableOpacity onPress={addTodo} style={styles.btnAdd}>
-                    <Entypo name="plus" size={35} color={theme.colors.green} />
+                <TouchableOpacity onPress={addTodo} style={styles.inserir}>
+                    <Text style={styles.inserir}>Add</Text>
                 </TouchableOpacity>
             </View>
 
             <Line />
-        </View>
+
+        </Pressable>
     );
 }
