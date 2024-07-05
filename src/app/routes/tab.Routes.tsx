@@ -21,11 +21,12 @@ export function TabRoutes() {
         tabBarActiveTintColor: theme.colors.white,
         tabBarInactiveTintColor: theme.colors.gray[500],
 
+
         tabBarStyle: {
           backgroundColor: theme.colors.gray[800],
           borderTopColor: theme.colors.gray[700],
-          paddingBottom: 5,
-          height: 55,
+          paddingBottom: 15,
+          height: 70,
 
         }
       }}
@@ -33,7 +34,6 @@ export function TabRoutes() {
       <Screen
         name="Tasks"
         component={StackRoutes}
-
         options={{
           tabBarLabel: 'Tasks',
           tabBarIcon: ({ focused, color }) => {

@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import { theme } from "../../theme";
+import { white } from "react-native-paper/lib/typescript/styles/themes/v2/colors";
 
 export const styles = StyleSheet.create({
     container: {
@@ -8,6 +9,7 @@ export const styles = StyleSheet.create({
         width: '100%',
         paddingHorizontal: 10,
         // backgroundColor: 'red',
+        justifyContent: 'center',
     },
 
     null: {
@@ -61,36 +63,27 @@ export const styles = StyleSheet.create({
         borderRadius: 6,
     },
     containerInput: {
-        height: 120,
-        backgroundColor: theme.colors.gray[700],
+        width: '100%',
+        height: 100,
+        backgroundColor: theme.colors.gray[800],
         borderRadius: 10,
-        flexDirection: 'row',
-        // paddingVertical: 20,
+        borderColor: theme.colors.gray[600],
+        borderWidth: 3,
         paddingHorizontal: 10,
-        // alignItems: 'center',
-        // justifyContent: 'center',
-
+        paddingVertical: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
     },
     input: {
-        minWidth: 320,
-        maxWidth: 320,
+        minWidth: '70%',
         color: theme.colors.white,
         // backgroundColor: theme.colors.gray[800],
-        height: 120,
-        // borderRadius: 50,
-        fontSize: 18,
-        // paddingLeft: 20,
-        fontFamily: theme.fonts.DidactGothic,
-    },
-    btnClearAll: {
-        width: 60,
         height: 60,
-        borderRadius: 50,
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        position: 'absolute',
-        top: -85,
-        right: 25,
+        fontSize: 18,
+        fontFamily: theme.fonts.DidactGothic,
+        paddingLeft: 10,
+
     },
     btnAdd: {
         position: 'absolute',
@@ -103,20 +96,29 @@ export const styles = StyleSheet.create({
         right: 20,
         bottom: 20,
     },
+
+    btnClearAll: {
+        width: 40,
+        height: 40,
+        // backgroundColor: 'blue',
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     inserir: {
-        // width: 60,
-        // height: 60,
-        // borderRadius: 50,
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        position: 'absolute',
-        color: theme.colors.white,
+        width: 40,
+        height: 40,
+        borderRadius: 50,
+        // backgroundColor: 'blue',
+
+        textAlign: 'center',
+        textAlignVertical: 'center',
+
         fontFamily: theme.fonts.DidactGothic,
+        color: theme.colors.white,
         fontWeight: 'bold',
         fontSize: 16,
-        paddingLeft: 10,
-        right: 10,
-        bottom: 10,
-    },
+    }
+
 });
 

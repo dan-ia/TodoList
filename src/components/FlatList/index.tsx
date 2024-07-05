@@ -19,28 +19,42 @@ export default function Flat() {
 
 
     const [visibleInput, setVisibleInput] = useState("none")
+    const [opacity, setOpacity] = useState(1)
 
 
     function enabledInput() {
         if (visibleInput === "none") {
             setVisibleInput("undefined")
+            setOpacity(0.3)
+
         } else {
-            return setVisibleInput("none")
+            setVisibleInput("none")
+
         }
     }
 
     function disableInput() {
-        setVisibleInput("none")
-        Keyboard.dismiss()
+        // setVisibleInput("none")
+        // Keyboard.dismiss()
+        setNameButton('Done')
     }
 
+    const [nameButton, setNameButton] = useState("Back")
     const [textInput, setTextInput] = useState('');
 
     const addTodo = () => {
-        if (textInput.trim() === "") {
+        if (textInput.trim() === "" && nameButton === 'Done') {
             setVisibleInput("none")
-            // Keyboard.dismiss()
+            setOpacity(1)
+            setNameButton('Back')
             Alert.alert('A Tarefa não pode ser vazia!')
+        }
+        else if (textInput.trim() === "" && nameButton === 'Back') {
+            setNameButton('Back')
+            setVisibleInput("none")
+            setOpacity(1)
+
+
         } else {
             const newTodo = {
                 id: Math.random(),
@@ -49,6 +63,7 @@ export default function Flat() {
             };
             setTodos([...todos, newTodo]);
             setTextInput('');
+
         }
     };
 
@@ -148,19 +163,15 @@ export default function Flat() {
 
     return (
 
-        <Pressable style={styles.container} onPress={disableInput}>
+        <View style={styles.container}>
 
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={todos}
-                contentContainerStyle={styles.flat}
+                contentContainerStyle={{ opacity: opacity }}
                 inverted={false}
                 renderItem={({ item }) => <ListItem todo={item} />}
             />
-
-            <TouchableOpacity style={styles.btnClearAll} onPress={() => clearTodos()}>
-                <FontAwesome5 name="trash-alt" size={24} color={theme.colors.red} />
-            </TouchableOpacity>
 
             <TouchableOpacity onPress={enabledInput} style={styles.btnAdd}>
                 <Entypo name="plus" size={35} color={theme.colors.gray[700]} />
@@ -168,11 +179,15 @@ export default function Flat() {
 
             <View style={[styles.containerInput, { display: visibleInput }]}>
 
+                <TouchableOpacity style={[styles.btnClearAll, { display: visibleInput }]} onPress={() => clearTodos()}>
+                    <FontAwesome5 name="trash-alt" size={24} color={theme.colors.red} />
+                </TouchableOpacity>
+
                 <SafeAreaView>
                     <TextInput
                         style={styles.input}
                         value={textInput}
-                        focusable
+                        onPressOut={disableInput}
                         onChangeText={(text) => setTextInput(text)}
                         placeholder="Create your task..."
                         placeholderTextColor={theme.colors.gray[600]}
@@ -181,12 +196,13 @@ export default function Flat() {
                 </SafeAreaView>
 
                 <TouchableOpacity onPress={addTodo} style={styles.inserir}>
-                    <Text style={styles.inserir}>Add</Text>
+                    <Text style={styles.inserir}>{nameButton}</Text>
                 </TouchableOpacity>
+
             </View>
 
             <Line />
 
-        </Pressable>
+        </View>
     );
 }

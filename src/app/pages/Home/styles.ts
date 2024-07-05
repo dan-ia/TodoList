@@ -7,12 +7,12 @@ export const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         backgroundColor: theme.colors.gray[800],
+        paddingHorizontal: 10,
         alignItems: "center",
     },
     containerHeader: {
         width: '100%',
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 15 : 55,
-        paddingHorizontal: 10,
         paddingBottom: 5,
     },
 
