@@ -26,10 +26,10 @@ export default function Notes() {
                 <Title title="Notes" />
             </View>
 
-            <ScrollView
-                scrollEnabled
-                showsVerticalScrollIndicator={false}>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.containerGrids}>
+
                     <GridSmall />
                     <GridMedium />
                     <GridMedium />
@@ -53,7 +53,7 @@ export default function Notes() {
 
 
 
-        </View>
+        </View >
     )
 }
 

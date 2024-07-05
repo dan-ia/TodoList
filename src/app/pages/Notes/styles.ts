@@ -7,20 +7,21 @@ export const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         backgroundColor: theme.colors.gray[800],
-
-        // justifyContent: 'center',
+        paddingHorizontal: 10,
     },
     containerHeader: {
         width: '100%',
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 15 : 55,
-        paddingHorizontal: 10,
         paddingBottom: 5,
     },
     containerGrids: {
+        width: '100%',
+        gap: 10,
         paddingTop: 10,
-        paddingHorizontal: 5,
         flexWrap: 'wrap',
         flexDirection: 'row',
+        justifyContent: 'center',
+
     },
 
 
